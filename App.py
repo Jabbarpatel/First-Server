@@ -36,7 +36,7 @@ def get_data():
             "Company": data.company
         }
         interns_list.append(datalist)
-        print("Hii")
+       
     return jsonify(interns_list)
 
 @app.route("/data", methods=["POST"])
