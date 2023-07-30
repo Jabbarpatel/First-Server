@@ -55,6 +55,8 @@ def add_data():
 
 @app.route("/data/<int:id>", methods=["DELETE"])
 def delete_data(id):
+    
+    
     data = session.query(Intern).filter_by(id=id).first()
     session.delete(data)
     session.commit()
