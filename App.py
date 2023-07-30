@@ -11,7 +11,7 @@ Base = declarative_base()
 URL = 'mssql+pyodbc://DESKTOP-N7F35MN\SQLEXPRESS/React_DB?driver=ODBC+Driver+17+for+SQL+Server'
 conn = create_engine(URL)
 Session = sessionmaker(bind=conn)
-session = Session()
+session = Session()  
 
 class Intern(Base):
     __tablename__ = "bplusm_interns"
